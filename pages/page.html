@@ -152,14 +152,12 @@
 
     /* ====== Nav ====== */
     .nav {
-      /* make nav fixed to top and full width */
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       height: var(--nav-height);
       z-index: 100;
-      /* ensure sits above other content */
       backdrop-filter: blur(10px);
       background: linear-gradient(180deg, rgba(15, 18, 34, .88), rgba(15, 18, 34, .6));
       border-bottom: 1px solid rgba(255, 255, 255, .06);
@@ -168,55 +166,55 @@
     .nav-inner {
       max-width: 1500px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 24px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       height: 100%;
-      /* use nav height */
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       text-decoration: none;
-      color: var(--text)
+      color: var(--text);
     }
 
+    /* 🟢 Bigger logo */
     .brand svg {
-      width: 38px;
-      height: 38px
+      width: 52px;
+      height: 52px;
     }
 
-    /* increased logo size */
+    /* 🟢 Bigger and bolder brand name */
     .brand span {
       font-weight: 900;
-      letter-spacing: .2px;
-      font-size: 1.05rem
+      letter-spacing: 0.3px;
+      font-size: 1.5rem;
+      line-height: 1;
     }
 
-    /* slightly larger name */
     .nav-links {
       margin-left: auto;
       display: flex;
-      gap: 18px
+      gap: 20px;
     }
 
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
       font-weight: 600;
-      font-size: .95rem
+      font-size: 1rem;
     }
 
     .nav-links a:hover {
-      color: var(--text)
+      color: var(--text);
     }
 
     .cta-btn {
       margin-left: 10px;
-      padding: 10px 16px;
+      padding: 12px 18px;
       border-radius: 10px;
       background: linear-gradient(135deg, var(--primary), #8e88ff);
       color: white;
@@ -224,10 +222,11 @@
       border: 0;
       cursor: pointer;
       box-shadow: 0 6px 20px rgba(108, 99, 255, .45);
+      transition: transform 0.2s ease;
     }
 
     .cta-btn:hover {
-      transform: translateY(-1px)
+      transform: translateY(-1px);
     }
 
     /* ====== Hero ====== */
@@ -697,7 +696,7 @@
     }
 
     .section h2 {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-size: clamp(4rem, 3vw, 2.2rem);
       margin: 0 0 8px
     }
 
@@ -1066,7 +1065,7 @@
   <section class="video-section section">
     <div class="video-container">
       <div class="video-text">
-        <h2>PageoNix Showcase</h2>
+        <h2>Showcase</h2>
         <p class="lead">
           PageoNix is a creative web design and development studio dedicated to building beautiful, high-performance
           websites that empower modern brands. We blend strategy, aesthetics, and technology to craft digital
@@ -1077,7 +1076,7 @@
 
       <div class="video-wrapper">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/jwBoB05HJKQ?autoplay=1&loop=1&playlist=jwBoB05HJKQ&controls=1&modestbranding=1&rel=0&iv_load_policy=3&cachebust=1"
+          src="https://www.youtube-nocookie.com/embed/jwBoB05HJKQ?autoplay=0&loop=1&playlist=jwBoB05HJKQ&controls=1&modestbranding=1&rel=0&iv_load_policy=3&cachebust=1"
           title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
 
