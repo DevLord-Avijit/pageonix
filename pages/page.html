@@ -335,11 +335,13 @@
       aspect-ratio: 16 / 9;
     }
 
-    .video-wrapper video {
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      /* ensures full video fits without cropping */
+      border: none;
       border-radius: 18px;
       display: block;
     }
@@ -381,6 +383,7 @@
     }
 
     /* Video ends */
+
 
     .sub {
       color: var(--muted);
@@ -1073,11 +1076,15 @@
       </div>
 
       <div class="video-wrapper">
-        <video loop playsinline controls>
-          <source src="../showcase.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/jwBoB05HJKQ?autoplay=1&loop=1&playlist=jwBoB05HJKQ&controls=1&modestbranding=1&rel=0&iv_load_policy=3&cachebust=1"
+          title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+
+
       </div>
+
+
     </div>
   </section>
 
